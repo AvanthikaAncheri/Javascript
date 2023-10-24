@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <button onclick="demo()">click</button>
+    <p class="para1">welcome</p>
+    <p class="para1">welcome to JS</p>
+    <p class="para1">welcome to JavaScript</p>
+    <script>
+        function demo()
+        {
+            const c = document.getElementById('demo').innerHTML="Javascript";
+        }
+        document.getElementById("demo").style.color="red";
+
+        const element = document.getElementsByTagName("p");
+        element[0].style.fontSize="50px";
+        element[1].style.color="green";
+
+        let a=document.querySelectorAll(".para1")[2].style.color="plum";
+    </script>
+</body>
+</html>

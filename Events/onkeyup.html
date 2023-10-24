@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onkeyup</title>
+</head>
+<body>
+    <h2 id="demo">Welcome Back Dear</h2>
+    <div>
+        <h3>Are U Alright</h3>
+        Tell me : <input type="text" id="para">
+    </div>
+    <script>
+        document.getElementById("para").onkeyup = function(){
+            para();
+        };
+        function para(){
+            document.getElementById("demo").style.color = "green";
+        }
+    </script>
+</body>
+</html>

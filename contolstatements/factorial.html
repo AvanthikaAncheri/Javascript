@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+</head>
+<body>
+    <script>
+        const number = parseInt(prompt('Enter a number:'));
+        if(number<0){
+            document.writeln('Error');
+        }
+        else if(number===0){
+            document.writeln(`The factorila of ${number} is 1`);
+        }
+        else{
+            let fact = 1;
+            for(i=1;i<= number;i++){
+                fact*=i;
+            }
+            document.writeln(`The factorial of ${number} is ${fact}`);
+        }
+    </script>
+</body>
+</html>

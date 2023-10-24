@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validation</title>
+</head>
+<body>
+    <script>
+        function validateEmail(email_id){
+            const regex_pattern = ((/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/));
+
+            if (regex_pattern.test(email_id)){
+                alert(`${email_id} is valid`);
+            }
+            else{
+                alert(`${email_id} is not valid`);
+            }
+        }
+        validateEmail('avanthika@123');
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM1</title>
+</head>
+<body>
+    <section>
+        <h1>futuralabs</h1>
+        <button onclick="myFunction()">create element</button>
+        <button onclick="removeText()">remove element</button>
+    </section>
+</body>
+<script>
+    function myFunction(){
+        let newpara = document.createElement("P");
+        newpara.textContent = "Welcome to the world of Javascript";
+        //newpara.innerHTML = "Welcome to the world of Javascript";
+        let sec = document.querySelector("section");
+        sec.appendChild(newpara);
+    }
+    function removeText(){
+        let sec = document.querySelector("section");
+        let newpara = sec.querySelector("p");
+        sec.removeChild(newpara);
+    }
+</script>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NullValidation</title>
+</head>
+<body style="background-color: plum;">
+    <h1 id="h3" style="color: rgb(86, 10, 101);margin-left: 40%;">Sign UP</h1>
+    <div class="signup" style="margin-left: 40%;">
+        <input type="text" class="signup" placeholder="name" id="name" onkeyup="clearmsg('sp1')"><span style="color: brown;" id="sp1"></span><br><br>
+        <input type="number" class="signup" placeholder="mobile number" id="mobile" onkeyup="clearmsg('sp2')"><span style="color: brown;" id="sp2"></span><br><br>
+        <input type="text" class="signup" placeholder="place" id="place" onkeyup="clearmsg('sp3')"><span style="color: brown;" id="sp3"></span><br>
+        <input type="email" class="signup" placeholder="email" id="email" onkeyup="clearmsg('sp4')"><span style="color: brown;" id="sp4"></span><br><br>
+        <input type="email" class="signup" placeholder="username" id="username" onkeyup="clearmsg('sp5')"><span style="color: brown;" id="sp5"></span><br><br>
+        <input type="password" class="signup" placeholder="password" id="password" onkeyup="clearmsg('sp6')"><span style="color: brown;" id="sp6"></span><br><br>
+        <input type="file" class="signup" name="photo" ><br><br>
+        <button onclick="return valid(); return false;" name="submit">Subbmit</button>
+    </div>
+    <script type="text/javascript">
+        function valid(){
+            var name = document.getElementById("name").value;
+        var mobile=document.getElementById("mobile").value;
+        var place = document.getElementById("place").value;
+        var nail = document.getElementById("email").value;
+        var username = document.getElementById("username").value;
+        var password =  document.getElementById("password").value;
+
+        if (name==""){
+            document.getElementById("sp1").innerHTML="please enter your name";
+            return false;
+        }
+        if (mobile==""){
+            document.getElementById("sp2").innerHTML="please enter your mobile";
+            return false;
+        }
+        if (place==""){
+            document.getElementById("sp3").innerHTML="please enter your place";
+            return false;
+        }
+        if (email==""){
+            document.getElementById("sp4").innerHTML="please enter your email";
+            return false;
+        }
+        if (username==""){
+            document.getElementById("sp5").innerHTML="please enter your username";
+            return false;
+        }
+        if (password==""){
+            document.getElementById("sp6").innerHTML="please enter your password";
+            return false;
+        }
+        return true;
+        }
+        
+  
+    </script>
+</body>
+</html>
